@@ -53,9 +53,6 @@ I'm now moving toward **agentic AI and product-focused engineering**. I build ag
 
 ## Projects
 
-### 🧠 ARES: Autonomous Reliability and Execution Suite
-Two-agent LangGraph system for production operations: an **Incident Response Agent** and a **CI/CD Failure Diagnosis Agent**. It includes human-in-the-loop approval via HMAC-signed email action links, severity gating, and auto-reject timeouts. It ships with a Spring Boot starter for drop-in integration.
-`Python` `LangGraph` `FastAPI` `Groq` `Spring Boot`
 
 ### 🔎 NL-SQL Engine
 Production natural-language-to-SQL service. Replaced full-schema prompt injection with **GraphRAG schema retrieval**: table embeddings, foreign-key edges, cosine-similarity retrieval, and bidirectional BFS over FK relationships to pull in only the relevant subgraph.
@@ -64,14 +61,6 @@ Production natural-language-to-SQL service. Replaced full-schema prompt injectio
 ### 🛠️ cns-devintel
 MCP server that performs **static AST analysis** of Spring Boot codebases, with no LLM server-side. It detects N+1 queries, transactional pitfalls, security misconfigurations, and volatile in-memory queue anti-patterns, and maps endpoints. It runs bounded-concurrency repo analysis through JGit and StaticJavaParser, and works with agent-mode IDE clients.
 `Java` `Spring Boot` `MCP` `JGit` `StaticJavaParser`
-
-### ⚙️ Taskmaster
-Multi-tenant job queue and scheduler built as infrastructure-as-a-service. It uses Postgres `SELECT … FOR UPDATE SKIP LOCKED`, Java 21 virtual-thread workers, exponential backoff, dead-letter queues, cron scheduling, and tenant callback delivery.
-`Java 21` `Spring Boot` `PostgreSQL`
-
-### 📈 Vakratunda
-Multi-agent research and signal system for Indian equities and crypto. It is built as three independent services: **Yukti** (a deterministic rule engine where the LLM only explains), **Drishti** (research), and **Ganita** (quant and backtesting).
-`Python` `LangGraph` `pandas-ta` `vectorbt` `CCXT` `ChromaDB`
 
 ### 📚 Ask HR
 Agentic RAG chatbot over real HR policy documents. The graph covers routing, retrieval, relevance grading, a query-rewrite retry loop, and a Presidio PII scrub as the final node, traced end to end with LangSmith.
@@ -121,7 +110,7 @@ TODO: relevant coursework, clubs, or notable academic work (optional)
 
 ## Currently
 
-- 🔭 Building **ARES**, a production-minded multi-agent reliability suite
+- 🔭 Building **NLSQL**, a production-minded multi-agent reliability suite
 - 🌱 Going deeper on agent guardrails, evaluation, and token-efficient multi-agent design
 - 💬 Open to talking about distributed systems, agent architecture, and backend reliability
 
